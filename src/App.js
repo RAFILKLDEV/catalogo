@@ -12,7 +12,8 @@ function App() {
   const [menuAberto, setMenu] = useState(false)
 
   const handleAppClick = (event) => {
-    if (menuAberto && event.target.className !== 'chartMenu') {
+    const chartMenu = document.body.querySelector('.chartMenu');
+    if (menuAberto && !chartMenu.contains(event.target)) {
       setMenu(false);
     }
   }
@@ -51,9 +52,8 @@ function App() {
           <button className='Button'>Tamanho</button>
           <button className='Button'>Ingredientes</button>
         </div>
-        <Chart className="chartMenu" chartzim={carrinho}/>
-        <div className='Catalog'>
-          {produtos.map(produto => 
+        <Chart chartzim={carrinho}/>
+        <div className='Catalog'> {produtos.map(produto => 
           <Card key={produto.src} 
           carrinho={carrinho}
           produto={produto} 
