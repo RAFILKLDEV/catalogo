@@ -1,0 +1,118 @@
+.Card {
+    background-color: rgb(242, 241, 241);
+
+    height: 250px;
+    width: 400px;
+
+    border: solid 2px black;
+    border-radius: 5%;
+
+    margin: 15px;
+
+    display: flex;
+}
+
+.Card-Select {
+    background-color: rgb(242, 241, 241);
+
+    height: 250px;
+    width: 400px;
+
+    border: solid 3px green;
+    border-radius: 5%;
+
+    margin: 15px;
+
+    display: flex;
+}
+
+.Card-Select img{
+    height: 200px;
+    width: 200px;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+
+    border: solid 2px;
+
+    align-self: center;
+}
+
+.Card img{
+    height: 200px;
+    width: 200px;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+
+    border: solid 2px;
+
+    align-self: center;
+}
+
+.Infomacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 200px;
+
+    
+
+    font-weight: 500;
+
+    margin: 20px 10px 10px 10px;
+}
+
+.Infomacao #pizza{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(159, 0, 0);
+}
+
+.Infomacao #ingredientes{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    word-wrap: break-word;
+    height: auto;
+}
+
+.Infomacao div#preco{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 22px;
+
+    align-content: center;
+    justify-content: flex-start;
+
+    width: 120%;
+
+}
+
+.Infomacao i#star{
+    color: yellow;
+}
+
+.Infomacao button#add{
+    border: none;
+    background-color: inherit;
+    
+}
+
+.Infomacao div#star-info{
+    margin-left: 5px;
+}
+
+.Infomacao i#square{
+    align-content: flex-end;
+}
+
+.Nota {
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+    margin-right: 15px;
+
+    width: 140px;
+}
