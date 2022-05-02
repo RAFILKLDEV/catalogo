@@ -10,7 +10,7 @@ const Chart = ({chartzim}) => {
             {chartzim.map(it => <ChartItem key={it} id={it}/> )}
         </div>
         <div className="checkoutContainer">
-            <Checkout/>
+            <Checkout id={chartzim}/>
         </div>
     </div>
     )
